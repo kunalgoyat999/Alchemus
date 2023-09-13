@@ -6,7 +6,7 @@ import Dashboard from "../pages/dashboard";
 export default function AllRoutes() {
     return (
         <Routes>
-            <Route path="/sign-up" element={<Registration/> }/>
+            <Route path="/signup" element={<Registration/> }/>
             <Route path="/" element={<Dashboard/>}/>
         </Routes>
     )
