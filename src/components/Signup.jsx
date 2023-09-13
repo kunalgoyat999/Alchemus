@@ -19,7 +19,7 @@ const SignupBox = () => {
      </FormControl>
      <Box className="checkBox_box">
      <Text size='sm'>By signing up, you are agreeing to <Link color='blue.900'>Privacy Policy</Link> </Text>
-     <Button colorScheme="blue" w='35%'>Register Me</Button>
+     <Button colorScheme="blue" bg='#4160D8' w='35%'>Register Me</Button>
      </Box>
        </>
     )

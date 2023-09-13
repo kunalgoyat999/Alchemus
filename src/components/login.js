@@ -29,7 +29,7 @@ const Loginbox = () => {
    <Link color='red.400' fontSize='sm'>Forget Password</Link>
      </Box>
      <Box className='login_submit'>
-     <Button colorScheme='blue' size='md' my='1em' w='30%'>Log In</Button>
+     <Button colorScheme='blue' bg='#4160D8' size='md' my='1em' w='30%'>Log In</Button>
      </Box>
       </>
     )

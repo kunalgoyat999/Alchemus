@@ -23,7 +23,8 @@ const Registration = () => {
           <div className='login_signupToggle'> 
           <Button
           color={status?'white':'blackAlpha'}
-           colorScheme={status?'blue':''} 
+          colorScheme={status? 'blue':''} 
+           bg={status?'#4160D8':''} 
            borderRadius='5em'
             w='48%'
            variant='solid'
@@ -34,6 +35,7 @@ const Registration = () => {
 
           <Button 
           colorScheme={status?'':'blue'}
+          bg={status?'':'#4160D8'}
           color={status?'black':'white'}
           borderRadius='5em'
            w='45%' 
