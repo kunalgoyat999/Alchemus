@@ -16,6 +16,7 @@ function PasswordInput() {
     <InputGroup size='md'>
       <Input
         pr='4.5rem'
+        fontSize='small'
         type={show ? 'text' : 'password'}
         placeholder='Enter password'
       />

@@ -9,7 +9,7 @@ import SignupBox from '../components/Signup';
 import '../assests/styles.css'
 
 const Registration = () => {
-  const [status, setStatus] = useState(false);
+  const [status, setStatus] = useState(true);
 
   useEffect(() => {
     console.log(status, 'fffdsc');
@@ -21,7 +21,7 @@ const Registration = () => {
         <img src={assets.images.LOGIN.BANNER} alt="" />
       </div>
       <div className='register_container'>
-        <Text as='b' fontSize='3xl' m='3'>Welcome to Alchemus</Text>
+        <Text as='b' fontSize='3xl' m='1'>Welcome to Alchemus</Text>
         <div className='login_signupToggle'>
           <Button
             color={status ? 'white' : 'blackAlpha'}

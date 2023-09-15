@@ -6,11 +6,12 @@ import {
   Input,
   Checkbox,
   Box,
-  Button
-} from '@chakra-ui/react'
+  Button,
+  Link
+} from '@chakra-ui/react';
 import PasswordInput from '../helper/PasswordInput';
-import { Link } from '@chakra-ui/react'
 import FormController from '../helper/FormController';
+import {  Link as Links } from 'react-router-dom';
 
 const Loginbox = () => {
   return (
@@ -26,7 +27,8 @@ const Loginbox = () => {
         <Checkbox size='sm' colorScheme='blue'>
           Remember credentials
         </Checkbox>
-        <Link color='red.400' fontSize='sm'>Forget Password</Link>
+        
+        <Link color='red.400' fontSize='sm' ><Links to='/resetPassword'>Forget Password</Links></Link>
       </Box>
       <Box className='login_submit'>
         <Button colorScheme='blue' bg='#4160D8' size='md' my='1em' w='30%'>Log In</Button>

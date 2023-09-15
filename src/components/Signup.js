@@ -1,6 +1,7 @@
 import { Box, Button, FormControl, FormLabel, Link, Text } from "@chakra-ui/react";
 import FormController from "../helper/FormController";
 import PasswordInput from "../helper/PasswordInput";
+import "../assests/styles.css";
 
 const SignupBox = () => {
   return (
@@ -18,7 +19,7 @@ const SignupBox = () => {
         <PasswordInput />
       </FormControl>
       <Box className="checkBox_box">
-        <Text size='sm'>By signing up, you are agreeing to <Link color='blue.900'>Privacy Policy</Link> </Text>
+        <Text size='sm'>By signing up, you are agreeing to <Link color='var(--primaryCOlor)'>Privacy Policy</Link> </Text>
         <Button colorScheme="blue" bg='#4160D8' w='35%'>Register Me</Button>
       </Box>
     </>

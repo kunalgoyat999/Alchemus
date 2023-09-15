@@ -1,10 +1,13 @@
 import { Box, Button, ButtonGroup, Text } from "@chakra-ui/react";
 import "../App.css";
+import { useNavigate } from 'react-router-dom'
 import FormController from "../helper/FormController";
-import "../assests/styles.css";
+// import "../assests/styles.css";
 import { color } from "framer-motion";
 
+
 const Resetpassword = () => {
+  let navigate = useNavigate()
   return (
     <>
       <div class="reset_container">
@@ -33,14 +36,15 @@ const Resetpassword = () => {
                 fontWeight="normal"
                 w="35%"
                 variant="outline"
+                onClick={()=>{navigate('/signup')}}
               >
                 Back to Login
               </Button>
               <Button
+              colorScheme='blue'
                 bg="var(--primaryCOlor)"
                 fontWeight="normal"
                 color="white"
-                variant="solid"
                 w="60%"
               >
                 Request Username/Password
