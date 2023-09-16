@@ -2,12 +2,18 @@ import { Box, Button, Input, InputGroup } from "@chakra-ui/react";
 import "../assests/styles.css";
 import "../assests/css/searchpage.css";
 import SelectInput from "../helper/SelectInput";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Popularcaegories from "../components/popularcategories";
 import Recentjobs from "../components/recentjobs";
 
 const Searchpage = () => {
   let [opt, setOption] = useState(["opt1", "opt2", "opt3", "opt4"]);
+  let [query,setQuery] = useState ("")
+  let [onSearch, setOnsearch] = useState(true);
+  useEffect(()=>{
+    
+  },[query])
+
   return (
     <>
       <Box className="search_box" bg="var(--lightBlue)">
@@ -15,15 +21,21 @@ const Searchpage = () => {
           <Input
             fontSize="small"
             placeholder="Enter Skills/Designations/compaines"
+            value={query}
+            onChange={(e)=>{
+               setQuery(e.target.value)
+            }}
           />
           <SelectInput placeholder="Job Category" options={opt} />
           <SelectInput placeholder="Country" options={opt} />
-          <Button colorScheme="blue" bg="#4160D8" fontSize="small" w="70%">
+          <Button colorScheme="blue" bg="#4160D8" fontSize="small" w="70%" onClick={()=>setOnsearch(false)}>
             Search
           </Button>
         </Box>
       </Box>
-      <Popularcaegories />
+      {
+      onSearch&&query==="" && <Popularcaegories />
+      }
       <Recentjobs />
     </>
   );

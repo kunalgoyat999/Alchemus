@@ -7,7 +7,7 @@ const Recentjobs = () => {
       <Box w="80%" m="auto">
         <Text fontSize="2xl" my="10" fontWeight="semibold">
           {" "}
-          Popular Categories
+          Recent Jobs
         </Text>
         <Box className="recentjobs_container">
           <JobBox

@@ -4,6 +4,7 @@ import engineer from "../assests/images/common/Engeneeringlogo@2x.png";
 
 const Popularcaegories = () => {
   return (
+    <>
     <Box w="80%" m="auto">
       <Text fontSize="2xl" my="10" fontWeight="semibold">
         {" "}
@@ -13,11 +14,14 @@ const Popularcaegories = () => {
         <Categoriebox title="engineer" logo={engineer} />
         <Categoriebox title="engineer" logo={engineer} />
         <Categoriebox title="engineer" logo={engineer} />
-
+        <Categoriebox title="engineer" logo={engineer} />
+        <Categoriebox title="engineer" logo={engineer} />
+        <Categoriebox title="engineer" logo={engineer} />
         <Categoriebox title="engineer" logo={engineer} />
         <Categoriebox title="engineer" logo={engineer} />
       </Box>
     </Box>
+    </>
   );
 };
 
