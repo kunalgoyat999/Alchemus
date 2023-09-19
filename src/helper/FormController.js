@@ -2,23 +2,22 @@ import {
   FormControl,
   FormLabel,
   FormErrorMessage,
-  FormHelperText,
   Input,
-  Checkbox,
-  Box,
-  Button,
 } from "@chakra-ui/react";
-import PasswordInput from "./PasswordInput";
 
-const FormController = ({ lable, placeholder, w }) => {
-  console.log(placeholder, "ff");
+const FormController = ({ label, placeholder, name, value, onChange, error }) => {
   return (
-    <>
-      <FormControl isRequired my="1em">
-        <FormLabel>{lable}</FormLabel>
-        <Input fontSize="small" placeholder={placeholder} w={w || "100%"} />
-      </FormControl>
-    </>
+    <FormControl my="1em" isInvalid={error}>
+      <FormLabel>{label}</FormLabel>
+      <Input
+        fontSize="small"
+        placeholder={placeholder}
+        name={name}
+        value={value}
+        onChange={onChange}
+      />
+      <FormErrorMessage>{error}</FormErrorMessage>
+    </FormControl>
   );
 };
 

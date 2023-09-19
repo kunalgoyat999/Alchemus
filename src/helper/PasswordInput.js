@@ -4,11 +4,10 @@ import {
   InputGroup,
   InputRightElement,
   Button,
-
 } from '@chakra-ui/react';
 import { AiOutlineEye, AiOutlineEyeInvisible } from 'react-icons/ai';
 
-function PasswordInput() {
+function PasswordInput({ name, value, onChange }) {
   const [show, setShow] = useState(false)
   const handleClick = () => setShow(!show)
 
@@ -19,6 +18,9 @@ function PasswordInput() {
         fontSize='small'
         type={show ? 'text' : 'password'}
         placeholder='Enter password'
+        name={name}
+        value={value}
+        onChange={onChange}
       />
       <InputRightElement width='4.5rem'>
         <Button bg='transparent' size='sm' onClick={handleClick}>
