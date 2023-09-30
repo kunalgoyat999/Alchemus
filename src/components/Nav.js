@@ -3,7 +3,7 @@ import assets from '../assests'
 const NavBar = () => {
 
   return (
-    <Box w='80%' m='auto' my='1em'>
+    <Box w='80%' m='auto' py='1em'>
       <Image src={assets.images.COMMON.APP_LOGO} alt='Alchemus Logo' />
     </Box>
   )

@@ -83,6 +83,31 @@
   display: flex;
 }
 
+.Box_Status{
+  border:1px solid #434343;
+  text-align: center;
+  padding:0.2em 0.7em;
+  border-radius: 1em;
+  background-color: rgba(128, 128, 128, 0.284);
+}
+
+.table_body{
+  font-size: small;
+}
+
+.table_head{
+  font-size: small;
+}
+
+.table_radio{
+ accent-color: #4160D8;
+ width: 100%;
+ height: 1em;
+}
+
+.table_button:hover{
+background-color: #415fd8a1;
+}
 @media screen and (max-width: 1200px) {
   .resetPassword_box {
     width: 60vw;
