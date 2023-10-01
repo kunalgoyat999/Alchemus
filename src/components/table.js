@@ -48,7 +48,7 @@ const Tablebox = () => {
                 <input
                   type="radio"
                   name="Job_title"
-                  className="table_radio"
+                  id="table_radio"
                   value="1"
                   defaultChecked
                 />
@@ -73,7 +73,7 @@ const Tablebox = () => {
                 <input
                   type="radio"
                   name="Job_title"
-                  className="table_radio"
+                  id="table_radio"
                   value="1"
                 />
               </Td>
@@ -97,7 +97,7 @@ const Tablebox = () => {
                 <input
                   type="radio"
                   name="Job_title"
-                  className="table_radio"
+                  id="table_radio"
                   value="1"
                 />
               </Td>
@@ -121,7 +121,7 @@ const Tablebox = () => {
                 <input
                   type="radio"
                   name="Job_title"
-                  className="table_radio"
+                  id="table_radio"
                   value="1"
                 />
               </Td>

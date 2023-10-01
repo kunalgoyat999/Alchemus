@@ -99,10 +99,10 @@
   font-size: small;
 }
 
-.table_radio{
+#table_radio{
  accent-color: #4160D8;
- width: 100%;
- height: 1em;
+ /* width: 100%; */
+ /* height: 2em; */
 }
 
 .table_button:hover{

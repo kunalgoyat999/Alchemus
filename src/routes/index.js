@@ -11,7 +11,7 @@ export default function AllRoutes() {
         <Routes>
             <Route path="/signup" element={<Registration />} />
             <Route path="/" element={<Table />} />
-            <Route path="/search" element={<Searchpage />} />
+            <Route path="/search-jobs" element={<Searchpage />} />
             <Route path="/resetPassword" element={<Resetpassword />} />
         </Routes>
     )

@@ -6,6 +6,10 @@
   margin: auto;
   margin-top: 20em;
 }
+.active-link{
+  color: blue;
+
+}
 .home_banner{
   position: absolute;
   width: 100%;

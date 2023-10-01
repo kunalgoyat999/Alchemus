@@ -1,0 +1,39 @@
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgba(0, 0, 0, 0.696);
+    position: sticky
+  }
+  
+  /* Define a CSS class for the active link */
+  a.active-link {
+    color: blue; /* Blue color for the active link */
+  }
+
+  .nav_login_box{
+    display: flex;
+    justify-content: space-between;
+    width: 10%;
+  }
+  
+  .nav_login_box:hover{
+    transition: 1s;
+    /* transition: width 2s; */
+  }
+
+  .nav_login_box a:hover{
+    color: var(--primaryCOlor);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.784);
+    transition: 0.3s;
+  }
+/* 
+  .nav_login_box a::after{
+    content: '';
+    position: absolute;
+    background-color: 1px solid red;
+    width: 100%;
+    height: 0.2rem;
+  }
+   */
+  
