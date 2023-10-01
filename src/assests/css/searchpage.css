@@ -4,7 +4,13 @@
   padding: 1.8em 2.5em;
   width: 80%;
   margin: auto;
-  margin-top: 20em;
+  /* padding-top: 20em; */
+}
+
+.search_page{
+  /* margin-top: 20em; */
+  padding-top: 25em;
+
 }
 .active-link{
   color: blue;

@@ -15,7 +15,7 @@ const Searchpage = () => {
   },[query])
 
   return (
-    <>
+    <div className="search_page">
     <Image src={home_banner} alt="home_banner" className="home_banner"/>
       <Box className="search_box" bg="var(--lightBlue)">
         <Box className="search_boxInput" bg="white" borderRadius="5">
@@ -38,7 +38,7 @@ const Searchpage = () => {
       onSearch&&query==="" && <Popularcaegories />
       }
       <Recentjobs />
-    </>
+    </div>
   );
 };
 

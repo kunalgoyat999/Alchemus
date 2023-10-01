@@ -1,16 +1,23 @@
 #navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
-    color: rgba(0, 0, 0, 0.696);
-    position: sticky
+    background-color: #7f7d80e2;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    overflow: hidden;
+    position: fixed;
+    top: 0; 
+    width: 100%; 
   }
   
   /* Define a CSS class for the active link */
   a.active-link {
     color: blue; /* Blue color for the active link */
   }
-
+  #navbar a:hover{
+ color: aqua;
+ border-bottom: rgba(230, 23, 23, 0.999);
+  }
   .nav_login_box{
     display: flex;
     justify-content: space-between;

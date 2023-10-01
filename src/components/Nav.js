@@ -7,7 +7,7 @@ import '../assests/css/navbar.css';
 const NavBar = () => {
   let [isLogin,setLogin] = useState(true);
   return (
-    <Box w='90%' m='auto' py='1em' id="navbar" fontWeight='semibold'>
+    <Box w='100%' m='auto' py='1em' id="navbar" color='whiteAlpha.800' fontWeight='semibold'>
       <NavLink exact to='/' activeClassName='active-link'>
         <Image src={assets.images.COMMON.APP_LOGO} alt='Alchemus Logo' />
       </NavLink>
