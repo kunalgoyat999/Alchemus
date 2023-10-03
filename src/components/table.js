@@ -18,6 +18,8 @@ import "../App.css";
 import { GrFormNext } from 'react-icons/gr'
 
 const Tablebox = ({ btn_title, path, jobslist, btnremove, wid,btncolor }) => {
+
+
   return (
     <>
 
@@ -45,113 +47,32 @@ const Tablebox = ({ btn_title, path, jobslist, btnremove, wid,btncolor }) => {
         <Table variant="striped" colorScheme="whiteAlpha" size="lg">
           <Thead className="table_head">
             <Tr background="#FAFAFA">
-              <Th></Th>
-              <Th>#Reffernce</Th>
-              <Th>Location</Th>
-              <Th>Date Applied</Th>
-              <Th>Job Category</Th>
-              <Th>Job Type</Th>
-              <Th>Resume</Th>
-              <Th>Status</Th>
+              {
+                tableArr[0].map(ele=><Th>{ele} </Th>)
+              }
             </Tr>
           </Thead>
           <Tbody className="table_body">
             <Tr>
-              <Td>
-                <input
-                  type="radio"
-                  name="Job_title"
-                  id="table_radio"
-                  value="1"
-                  defaultChecked
-                />
-              </Td>
-              <Td>
-                <Link color="blue.500">65454-sdvsdv</Link>{" "}
-              </Td>
-              <Td>Irvine , California , USA</Td>
-              <Td>08/30/2023</Td>
-              <Td>incurence</Td>
-              <Td>Claims Analyst</Td>
-              <Td>
-                <Link color="blue">dfvdvd</Link>
-              </Td>
-              <Td>
-                {" "}
-                <Box className="Box_Status">Applied</Box>{" "}
-              </Td>
+              {
+                tableArr[1].map(ele => <Td>{ele} </Td>)
+             }
             </Tr>
+            
             <Tr background="#FAFAFA">
-              <Td>
-                <input
-                  type="radio"
-                  name="Job_title"
-                  id="table_radio"
-                  value="1"
-                />
-              </Td>
-              <Td>
-                <Link color="blue.400">65454-sdvsdv</Link>{" "}
-              </Td>
-              <Td>Irvine , California , USA</Td>
-              <Td>08/30/2023</Td>
-              <Td>incurence</Td>
-              <Td>Claims Analyst</Td>
-              <Td>
-                <Link color="blue">dfvdvd</Link>
-              </Td>
-              <Td>
-                {" "}
-                <Box className="Box_Status">Applied</Box>{" "}
-              </Td>
+            {
+                tableArr[1].map(ele => <Td>{ele} </Td>)
+             }
             </Tr>
             <Tr>
-              <Td>
-                <input
-                  type="radio"
-                  name="Job_title"
-                  id="table_radio"
-                  value="1"
-                />
-              </Td>
-              <Td>
-                <Link color="blue.400">65454-sdvsdv</Link>{" "}
-              </Td>
-              <Td>Irvine , California , USA</Td>
-              <Td>08/30/2023</Td>
-              <Td>incurence</Td>
-              <Td>Claims Analyst</Td>
-              <Td>
-                <Link color="blue">dfvdvd</Link>
-              </Td>
-              <Td>
-                {" "}
-                <Box className="Box_Status">Applied</Box>{" "}
-              </Td>
+            {
+                tableArr[1].map(ele => <Td>{ele} </Td>)
+             }
             </Tr>
             <Tr background="#FAFAFA">
-              <Td>
-                <input
-                  type="radio"
-                  name="Job_title"
-                  id="table_radio"
-                  value="1"
-                />
-              </Td>
-              <Td>
-                <Link color="blue.400">65454-sdvsdv</Link>{" "}
-              </Td>
-              <Td>Irvine , California , USA</Td>
-              <Td>08/30/2023</Td>
-              <Td>incurence</Td>
-              <Td>Claims Analyst</Td>
-              <Td>
-                <Link color="blue">dfvdvd</Link>
-              </Td>
-              <Td>
-                {" "}
-                <Box className="Box_Status">Applied</Box>{" "}
-              </Td>
+            {
+                tableArr[1].map(ele => <Td>{ele} </Td>)
+             }
             </Tr>
           </Tbody>
         </Table>
@@ -161,3 +82,32 @@ const Tablebox = ({ btn_title, path, jobslist, btnremove, wid,btncolor }) => {
 };
 
 export default Tablebox;
+
+
+let tableArr = [[ 
+  "",
+"#Reffernce",
+"Location",
+"Date Applied",
+"Job Category",
+"Job Type",
+"Resume",
+"Status"],
+[
+ 
+  <input
+    type="radio"
+    name="Job_title"
+    id="table_radio"
+    value="1"
+    defaultChecked
+  />,
+,
+  <Link color="blue.500">65454-sdvsdv</Link>
+,'Irvine , California , USA'
+,'08/30/2023'
+,'incurence'
+,'Claims Analyst',
+  <Link color="blue">dfvdvd</Link>,
+  <Box className="Box_Status">Applied</Box>
+]]

@@ -1,4 +1,4 @@
-import { Box, Button, Image, Input, InputGroup } from "@chakra-ui/react";
+import { Box, Button, Image, Input, InputGroup, Text } from "@chakra-ui/react";
 import "../assests/styles.css";
 import "../assests/css/searchpage.css";
 import SelectInput from "../helper/SelectInput";
@@ -17,6 +17,10 @@ const Searchpage = () => {
   return (
     <div className="search_page">
     <Image src={home_banner} alt="home_banner" className="home_banner"/>
+  <Box className="banner_title">
+
+    <Text fontSize='3em' fontWeight='semibold'> Get your dream job with Alchemus</Text>
+</Box>
       <Box className="search_box" bg="var(--lightBlue)">
         <Box className="search_boxInput" bg="white" borderRadius="5">
           <Input

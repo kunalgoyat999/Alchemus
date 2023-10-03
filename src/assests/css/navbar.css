@@ -8,16 +8,22 @@
     position: fixed;
     top: 0; 
     width: 100%; 
+    flex-wrap: wrap;
+  }
+
+  .navbar_profile_box{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    cursor: pointer;
   }
   
   /* Define a CSS class for the active link */
-  a.active-link {
-    color: blue; /* Blue color for the active link */
+  .active{
+    color: blue;/* Blue color for the active link */
+ border-bottom:2px solid white;
   }
-  #navbar a:hover{
- color: aqua;
- border-bottom: rgba(230, 23, 23, 0.999);
-  }
+ 
   .nav_login_box{
     display: flex;
     justify-content: space-between;

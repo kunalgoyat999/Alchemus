@@ -1,3 +1,12 @@
+.banner_title{
+  width: 30%;
+  margin:0 10%;
+  padding-bottom: 5em;
+  padding-top: 10em;
+
+}
+
+
 .search_box {
   display: flex;
   border-radius: 0.4rem;
@@ -9,7 +18,7 @@
 
 .search_page{
   /* margin-top: 20em; */
-  padding-top: 25em;
+  /* padding-top: 25em; */
 
 }
 .active-link{

@@ -4,13 +4,14 @@ import { Text, Button } from "@chakra-ui/react";
 import Loginbox from "../components/login";
 import SignupBox from "../components/Signup";
 import "../assests/styles.css";
+import { useNavigate } from "react-router-dom";
 
-const Registration = () => {
-  const [status, setStatus] = useState(true);
+const LoginPage = () => {
+ const navigate = useNavigate()
 
   useEffect(() => {
-    console.log(status, "fffdsc");
-  }, [status]);
+    // console.log(status, "fffdsc");
+  }, []);
 
   return (
     <div className="register_box">
@@ -23,39 +24,37 @@ const Registration = () => {
         </Text>
         <div className="login_signupToggle">
           <Button
-            color={status ? "white" : "blackAlpha"}
-            colorScheme={status ? "blue" : ""}
-            bg={status ? "#4160D8" : ""}
+            color="white" 
+            colorScheme="blue" 
+            bg="#4160D8" 
             borderRadius="5em"
             w="48%"
             variant="solid"
             onClick={() => {
-              setStatus(true);
+              navigate('/login')
             }}
           >
             Login
           </Button>
 
           <Button
-            colorScheme={status ? "" : "blue"}
-            bg={status ? "" : "#4160D8"}
-            color={status ? "black" : "white"}
+            colorScheme="" 
+            bg="" 
+            color="black"
             borderRadius="5em"
             w="45%"
             variant="solid"
             onClick={() => {
-              setStatus(false);
+              navigate('/signup')
             }}
           >
             Signup
           </Button>
         </div>
-        {/* <Loginbox /> */}
-
-        {status ? <Loginbox /> : <SignupBox />}
+        <Loginbox />
       </div>
     </div>
   );
 };
 
-export default Registration;
+export default LoginPage;

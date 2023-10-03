@@ -36,7 +36,7 @@ const Resetpassword = () => {
                 fontWeight="normal"
                 w="35%"
                 variant="outline"
-                onClick={()=>{navigate('/signup')}}
+                onClick={()=>{navigate('/login')}}
               >
                 Back to Login
               </Button>

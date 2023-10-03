@@ -1,4 +1,4 @@
-import { Box, Text } from "@chakra-ui/react";
+import { Box, Button, Text } from "@chakra-ui/react";
 import JobBox from "../helper/Job_box";
 
 const Recentjobs = () => {
@@ -53,6 +53,7 @@ const Recentjobs = () => {
             date="9th nov 2022"
           />
         </Box>
+        <Button variant='outline' my='2em' mx='40%' colorScheme='blue'>Load More</Button>
       </Box>
     </>
   );
