@@ -5,7 +5,7 @@ import Tablebox from "../components/table";
 const SavedJobs = () => {
     return (
         <>
-        <Tablebox btn_title='Saved Jobs' path='*' jobslist={[]}/>
+        <Tablebox btncolor='red' btn_title='DELETE' path='*' jobslist={[]}/>
         </>
     )
 }

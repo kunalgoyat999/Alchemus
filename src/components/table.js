@@ -15,23 +15,29 @@ import {
   background,
 } from "@chakra-ui/react";
 import "../App.css";
-const Tablebox = ({ btn_title, path, jobslist }) => {
+import { GrFormNext } from 'react-icons/gr'
+
+const Tablebox = ({ btn_title, path, jobslist, btnremove, wid,btncolor }) => {
   return (
     <>
-      <Button
-        colorScheme="blue"
-        bg="#4160D8"
-        fontSize="medium"
-        fontWeight="normal"
-        px="3em"
-        ml="10%"
-        my="2em"
-        mt='7em'
-      >
-        {`${btn_title} >`}
-      </Button>
+
+    {
+      btnremove ?<></> : <Button
+      colorScheme={btncolor? btncolor :"blue"}
+      bg={btncolor? btncolor :"#4160D8"}
+      fontSize="medium"
+      fontWeight="normal"
+      px="3em"
+      ml="10%"
+      my="2em"
+      mt='7em'
+    >
+      {`${btn_title} ` }{btncolor=='red'? '':'>'}
+    </Button>
+    }
+      
       <TableContainer
-        w="80%"
+        w={wid? wid : "80%"}
         m="auto"
         border="1px solid #D9D9D9"
         borderRadius="0.5em"
