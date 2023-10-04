@@ -64,9 +64,12 @@ const Myprofile = () => {
     <>
       <Box width="80%" className="myprofile">
        {
-        box?.map(element =>
-                <DropdownBox title={element.title} Component={element.Component} />
-        )
+        box?.map((element,i )=>{
+            if(i==0 || i ==1){
+                return(  <DropdownBox borderLeft='0.2em solid red' title={element.title} Component={element.Component} />  )
+            }
+            return ( <DropdownBox title={element.title} Component={element.Component} />  )
+        })
        } 
       </Box>
     </>

@@ -10,7 +10,10 @@
     width: 100%; 
     flex-wrap: wrap;
   }
+#navbar a{
+ padding-bottom: 4px;
 
+}
   .navbar_profile_box{
     display: flex;
     justify-content: space-evenly;
@@ -19,9 +22,15 @@
   }
   
   /* Define a CSS class for the active link */
-  .active{
-    color: blue;/* Blue color for the active link */
- border-bottom:2px solid white;
+  #navbar a:hover, .active{
+    color: #00ACEE;
+ border-bottom:1px solid white;
+ outline: none;
+    -webkit-transition: all 0.5s ease 0s;
+    -moz-transition: all 0.5s ease 0s;
+    -ms-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+    text-decoration: none
   }
  
   .nav_login_box{
