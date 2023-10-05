@@ -11,45 +11,45 @@ const Recentjobs = () => {
         </Text>
         <Box className="recentjobs_container">
           <JobBox
-            title="Software tester"
+            title="Software Manual tester"
             type="Permanent"
             company="Marks INC."
-            location="mumbai, india"
+            location="Mumbai, india"
             date="9th nov 2022"
           />
           <JobBox
-            title="Software tester"
+            title="Software Manual tester"
             type="Permanent"
             company="Marks INC."
-            location="mumbai, india"
+            location="Mumbai, india"
             date="9th nov 2022"
           />
           <JobBox
-            title="Software tester"
+            title="Software Manual tester"
             type="Permanent"
             company="Marks INC."
-            location="mumbai, india"
+            location="Mumbai, india"
             date="9th nov 2022"
           />
           <JobBox
-            title="Software tester"
+            title="Software Manual tester"
             type="Permanent"
             company="Marks INC."
-            location="mumbai, india"
+            location="Mumbai, india"
             date="9th nov 2022"
           />
           <JobBox
-            title="Software tester"
+            title="Software Manual tester"
             type="Permanent"
             company="Marks INC."
-            location="mumbai, india"
+            location="Mumbai, india"
             date="9th nov 2022"
           />
           <JobBox
-            title="Software tester"
+            title="Software Manual tester"
             type="Permanent"
             company="Marks INC."
-            location="mumbai, india"
+            location="Mumbai, india"
             date="9th nov 2022"
           />
         </Box>

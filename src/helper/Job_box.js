@@ -7,11 +7,14 @@ import { AiFillMessage } from "react-icons/ai";
 import { FaBagShopping } from "react-icons/fa6";
 import { HiOutlineLocationMarker } from "react-icons/hi";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const JobBox = ({ logo, title, type, location, date }) => {
   let [bookmark, setBookmark] = useState(false);
+  let navigate = useNavigate()
+
   return (
-    <Box className="job_box">
+    <Box className="job_box" onClick={()=>navigate('/job-details',{ state: { data: {title,type,location,date} } })}>
       <Box className="job_box_firstsec">
         <Box>
           <Image src={Job_Image} w="30%" mr="3" mb="3" />
