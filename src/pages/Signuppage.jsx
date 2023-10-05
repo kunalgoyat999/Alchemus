@@ -31,6 +31,7 @@ const SignupPage = () => {
             onClick={() => {
               navigate('/login')
             }}
+            bg = "transparent"
           >
             Login
           </Button>

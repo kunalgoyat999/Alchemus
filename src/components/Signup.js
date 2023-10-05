@@ -111,15 +111,15 @@ const SignupBox = () => {
         <Box className="checkBox_box">
           
           <FormControl  my="1em" isInvalid={errors.policyAccepted}>
-            <Checkbox
+            {/* <Checkbox
               name="policyAccepted"
               isChecked={formData.policyAccepted}
               onChange={handleChange}
-            >
+            > */}
              <Text size="sm">
             By signing up, you are agreeing to{" "}
           </Text>
-            </Checkbox>
+            {/* </Checkbox> */}
             <Link color="var(--primaryCOlor)"> Privacy Policy</Link>{" "}
               <FormErrorMessage>{errors.policyAccepted}</FormErrorMessage>
           </FormControl>

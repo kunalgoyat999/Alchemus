@@ -14,8 +14,8 @@ const NavBar = () => {
     <Box
       m="auto"
       fontSize="14px"
-      px="10%"
-      py="1em"
+      px="20%"
+      py="1.3em"
       id="navbar"
       color="white"
       fontWeight="semibold"
@@ -70,12 +70,13 @@ const NavBar = () => {
               });
             }}
           >
-            <CgProfile style={{ paddingRight: "0.2em", fontSize: "2.2em" }} />
+            {/* <CgProfile style={{ paddingRight: "0.2em", fontSize: "2.2em" }} /> */}
+            <Image src={assets.images.LOGIN.PROFILE} style={{marginRight: "0.3em"}}/>
             {"Vishal"}{" "}
           </Text>
         </>
       ) : (
-        <Box className="nav_login_box">
+        <Box className="nav_login_box" >
           <NavLink exact to="/login" activeClassName="active-link">
             Login{" "}
           </NavLink>

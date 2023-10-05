@@ -29,11 +29,11 @@ const LoginBox = () => {
     // Validation logic
     const newErrors = {};
 
-    if (!formData.loginId.trim() ) {
+    if (!formData.loginId.trim()) {
       newErrors.loginId = 'Login ID is required.';
     }
 
-    if (!formData.password.trim() || formData.password==='') {
+    if (!formData.password.trim() || formData.password === '') {
       newErrors.password = 'Password is required.';
     }
 
@@ -74,7 +74,7 @@ const LoginBox = () => {
         </Checkbox>
 
         <Link color='red.400' fontSize='sm'>
-          <Links to='/resetPassword'>Forget Password</Links>
+          <Links to='/resetPassword'>Forgot Password</Links>
         </Link>
       </Box>
       <Box className='login_submit'>

@@ -7,7 +7,7 @@ import DropdownBox from "../components/dropdown";
 const DocumentoryRepo = () => {
     return (
         <>
-        <Box m='auto'  w='80%' mt='7em'>
+        <Box m='auto'  w='60%' mt='7em'>
         <DropdownBox title={'Emplotment offer Letter'} Component={Tablebox} />
         </Box>
         </>
