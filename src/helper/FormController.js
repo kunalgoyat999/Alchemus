@@ -3,9 +3,10 @@ import {
   FormLabel,
   FormErrorMessage,
   Input,
+  FormHelperText,
 } from "@chakra-ui/react";
 
-const FormController = ({ label, placeholder, name, value, onChange, error }) => {
+const FormController = ({ label, placeholder, name, value, onChange, error, helpertext }) => {
   return (
     <FormControl my="1em" isInvalid={error}>
       <FormLabel>{label}</FormLabel>
@@ -16,7 +17,10 @@ const FormController = ({ label, placeholder, name, value, onChange, error }) =>
         value={value}
         onChange={onChange}
       />
-      <FormErrorMessage>{error}</FormErrorMessage>
+      {
+        error ? 
+      <FormErrorMessage>{error}</FormErrorMessage> : <FormHelperText>{helpertext}</FormHelperText>
+}
     </FormControl>
   );
 };

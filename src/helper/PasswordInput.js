@@ -4,6 +4,7 @@ import {
   InputGroup,
   InputRightElement,
   Button,
+  background,
 } from '@chakra-ui/react';
 import { AiOutlineEye, AiOutlineEyeInvisible } from 'react-icons/ai';
 
@@ -23,8 +24,8 @@ function PasswordInput({ name, value, onChange }) {
         onChange={onChange}
       />
       <InputRightElement width='4.5rem'>
-        <Button bg='transparent' size='sm' onClick={handleClick}>
-          {show ? <AiOutlineEye /> : <AiOutlineEyeInvisible />}
+        <Button bg='transparent' _hover={{background:'none'}} size='sm' onClick={handleClick}>
+          {show ? <AiOutlineEye style={{height:'24px',width:'24px',color:'#BFBFBF'}} /> : <AiOutlineEyeInvisible style={{height:'24px',width:'24px',color:'#BFBFBF'}}/>}
         </Button>
       </InputRightElement>
     </InputGroup>

@@ -5,6 +5,7 @@ import {
   Checkbox,
   FormControl,
   FormErrorMessage,
+  FormHelperText,
   FormLabel,
   Link,
   Text,
@@ -86,6 +87,7 @@ const SignupBox = () => {
           value={formData.username}
           onChange={handleChange}
           error={errors.username}
+          helpertext={'(Login ID should be atleast 5 characters)'}
         />
 
         <FormControl  my="1em" isInvalid={errors.password}>
@@ -95,7 +97,11 @@ const SignupBox = () => {
             value={formData.password}
             onChange={handleChange}
           />
+          {
+            !errors.password ? <FormHelperText>{'(Password should be atleast 5 character)'}</FormHelperText> :
             <FormErrorMessage>{errors.password}</FormErrorMessage>
+            
+          }
         </FormControl>
 
         <FormControl  my="1em" isInvalid={errors.confirmPassword}> 
@@ -110,16 +116,9 @@ const SignupBox = () => {
 
         <Box className="checkBox_box">
           
-          <FormControl  my="1em" isInvalid={errors.policyAccepted}>
-            {/* <Checkbox
-              name="policyAccepted"
-              isChecked={formData.policyAccepted}
-              onChange={handleChange}
-            > */}
-             <Text size="sm">
+          <FormControl  my="1em" >
+         
             By signing up, you are agreeing to{" "}
-          </Text>
-            {/* </Checkbox> */}
             <Link color="var(--primaryCOlor)"> Privacy Policy</Link>{" "}
               <FormErrorMessage>{errors.policyAccepted}</FormErrorMessage>
           </FormControl>

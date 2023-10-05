@@ -34,14 +34,14 @@
 }
 .search_boxInput {
   display: flex;
-  justify-content: space-evenly;
+  /* justify-content: space-evenly; */
   padding: 2em 1em;
   width: 100%;
 }
 
 .search_boxInput select {
-  width: 80%;
-  margin-left: 1em;
+  width: 93%;
+  margin-left:0.9em;
 }
 .search_container {
   background-color: transparent;
@@ -60,9 +60,15 @@
   align-items: center;
   flex-direction: column;
   height: 12em;
+  text-align: center;
+  text-wrap: wrap;
+  padding:0 3em;
   border: 1px solid #e6e6e6;
 }
 
+.cat_box:hover{
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
 /* recent jobs */
 
 .recentjobs_container {

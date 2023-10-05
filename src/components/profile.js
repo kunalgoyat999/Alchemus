@@ -27,13 +27,13 @@ const Profile_Container = () => {
 
         <Text fontWeight='medium' fontSize='xl' my='5' color='black'> Personal Details</Text>
 
-        <Table variant='' width='50%'>
+        <Table variant='' width='50%' id="profile_dropdown_table">
           <Tbody>
             {
               Object.keys(Personal_Details).map(key => (
                 <Tr key={key} color=''>
                   <Td paddingLeft='0em' py='0.2em' fontWeight='semibold'>{key}</Td>
-                  <Td paddingLeft='0em' py='0.2em' fontWeight='semibold'>{Personal_Details[key]}</Td>
+                  <Td paddingLeft='0em' py='0.2em' fontWeight='normal'>{Personal_Details[key]}</Td>
                 </Tr>
               ))
             }
@@ -49,7 +49,7 @@ const Profile_Container = () => {
               Object.keys(Contanct_Details).map(key => (
                 <Tr key={key} color=''>
                   <Td paddingLeft='0em' py='0.2em' fontWeight='semibold'>{key}</Td>
-                  <Td paddingLeft='0em' py='0.2em' fontWeight='semibold'>{Personal_Details[key]}</Td>
+                  <Td paddingLeft='0em' py='0.2em' fontWeight='normal'>{Personal_Details[key]}</Td>
                 </Tr>
               ))
             }
@@ -66,7 +66,7 @@ const Profile_Container = () => {
               Object.keys(Proffesional_Details).map(key => (
                 <Tr key={key} color=''>
                   <Td paddingLeft='0em' py='0.2em' fontWeight='semibold'>{key}</Td>
-                  <Td paddingLeft='0em' py='0.2em' fontWeight='semibold'>{Personal_Details[key]}</Td>
+                  <Td paddingLeft='0em' py='0.2em' fontWeight='normal'>{Personal_Details[key]}</Td>
                 </Tr>
               ))
             }

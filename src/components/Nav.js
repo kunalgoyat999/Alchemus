@@ -20,70 +20,64 @@ const NavBar = () => {
       color="white"
       fontWeight="semibold"
     >
-        <Image src={assets.images.COMMON.APP_LOGO} alt="Alchemus Logo" />
+      <Image src={assets.images.COMMON.APP_LOGO} alt="Alchemus Logo" />
       {isLogin ? (
         <>
-          <NavLink exact to="/my-profile" activeClassName="active-link">
+          <NavLink  to="/my-profile" activeClassName="active-link">
             MY PROFILE
           </NavLink>
-          <NavLink exact to="/search-jobs" activeClassName="active-link">
+          <NavLink  to="/search-jobs" activeClassName="active-link">
             SEARCH JOBS
           </NavLink>
-          <NavLink exact to="/referred-jobs" activeClassName="active-link">
+          <NavLink  to="/referred-jobs" activeClassName="active-link">
             REFERRED JOBS
           </NavLink>
-          <NavLink exact to="/saved-jobs" activeClassName="active-link">
+          <NavLink  to="/saved-jobs" activeClassName="active-link">
             SAVED JOBS
           </NavLink>
-          <NavLink exact to="/jobs-applied" activeClassName="active-link">
+          <NavLink  to="/jobs-applied" activeClassName="active-link">
             JOBS APPLIED
           </NavLink>
           <NavLink
-            exact
+            
             to="/document-repository"
             activeClassName="active-link"
           >
             DOCUMENT REPOSITORY
           </NavLink>
-          <Text
-            fontSize="1.2em"
-            className="navbar_profile_box"
-            onClick={() => {
-              toast({
-                title: (
-                  <Button
-                    colorScheme="blackAlpha.600"
-                    bg="transparent"
-                    onClick={() => {
-                      setLogin(false); navigate("/login");
-                      toast.closeAll()
-                    }}
-                    variant="outline"
-                  >
-                    Log Out
-                  </Button>
-                ),
-                position: "top",
-                variant: "left-accent",
-                isClosable: true,
-                status: "error",
-              });
-            }}
-          >
-            {/* <CgProfile style={{ paddingRight: "0.2em", fontSize: "2.2em" }} /> */}
-            <Image src={assets.images.LOGIN.PROFILE} style={{marginRight: "0.3em"}}/>
-            {"Vishal"}{" "}
-          </Text>
+          <Box>
+            <Text fontSize="1.2em" className="navbar_profile_box">
+              {/* <CgProfile style={{ paddingRight: "0.2em", fontSize: "2.2em" }} /> */}
+              <Image
+                src={assets.images.LOGIN.PROFILE}
+                style={{ marginRight: "0.3em" }}
+              />
+              {"Vishal"}{" "}
+            </Text>
+            <Box className="logout_box">
+              {" "}
+              <Button
+                id="logout_btn"
+                onClick={() => {
+                  setLogin(false);
+                  navigate('/login')
+                }}
+                borderRadius={"none"}
+              >
+                LOGOUT
+              </Button>
+            </Box>
+          </Box>
         </>
       ) : (
-        <Box className="nav_login_box" >
-          <NavLink exact to="/login" activeClassName="active-link">
-            Login{" "}
+        <Box className="nav_login_box" fontSize='md'>
+          <NavLink  to="/login" activeClassName="active-link">
+            LOGIN{" "}
           </NavLink>
           {" | "}
-          <NavLink exact to="/signup" activeClassName="active-link">
+          <NavLink  to="/signup" activeClassName="active-link">
             {" "}
-            Signup
+            SIGNUP
           </NavLink>
         </Box>
       )}

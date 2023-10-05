@@ -79,12 +79,17 @@
   background-color: #F0F0F0;
 }
 
-.table_body{
+table .table_body td{
   font-size: small;
+  padding:0.4em 0.8em;
+  text-wrap: wrap;
 }
 
-.table_head{
+table .table_head th{
+
+  padding:1em 0.3em;
   font-size: small;
+  text-wrap: wrap;
 }
 
 #table_radio{

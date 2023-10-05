@@ -5,6 +5,7 @@ import { useState } from "react"
 const SelectInput = ({placeholder, options=[]}) => {
 let [option , setOption] = useState(options);
     return (
+      <>
         <Select fontSize='small' placeholder={`${placeholder}`} >
       {
     option.forEach((opt)=>{
@@ -14,6 +15,7 @@ let [option , setOption] = useState(options);
     })
       }
       </Select>
+      </>
     )
 }
 
