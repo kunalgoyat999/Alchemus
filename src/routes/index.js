@@ -12,6 +12,7 @@ import DocumentoryRepo from "../pages/documentoryrepo";
 import Profile from "../pages/profile";
 import SignupPage from "../pages/Signuppage";
 import LoginPage from "../pages/loginpage";
+import Job_Details from "../pages/JobDetails";
 
 export default function AllRoutes() {
     return (
@@ -27,6 +28,7 @@ export default function AllRoutes() {
             <Route path='/jobs-applied' element={<JobsApplied />} />
             <Route path='/document-repository' element={<DocumentoryRepo/>} />
             <Route path='/profile' element={<Profile />} />      
+            <Route path='/job-details' element={<Job_Details />} />      
         </Routes>
     )
 }

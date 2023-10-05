@@ -70,7 +70,7 @@ const LoginBox = () => {
 
       <Box className='checkBox_box'>
         <Checkbox size='sm' colorScheme='blue'>
-          Remember credentials
+          Remember Credentials
         </Checkbox>
 
         <Link color='red.400' fontSize='sm'>
